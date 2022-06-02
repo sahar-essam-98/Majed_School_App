@@ -508,8 +508,8 @@ class _MainScreenState extends State<MainScreen>
                                   children: [
                                     Image.asset(
                                       'assets/info.png',
-                                      width: 160.w,
-                                      height: 120,
+                                      width: 140.w,
+                                      height: 120.h,
                                       fit: BoxFit.fill,
                                     ),
                                     Column(
@@ -519,11 +519,11 @@ class _MainScreenState extends State<MainScreen>
                                           style: TextStyle(
                                               fontFamily: 'noto',
                                               fontWeight: FontWeight.w900,
-                                              fontSize: 24,
+                                              fontSize: 24.sp,
                                               color: Colors.red),
                                         ),
                                         SizedBox(
-                                          height: 10,
+                                          height: 10.h,
                                         ),
                                         Container(
                                           width: 170.w,

@@ -20,14 +20,14 @@ class CourseDetails extends StatefulWidget {
 
 class _CourseDetailsState extends State<CourseDetails> {
 
-
   void _shareImageAndText() async {
     try {
       final ByteData bytes = await rootBundle.load('assets/icon.png');
       await WcFlutterShare.share(
           sharePopupTitle: 'share',
           subject: 'This is subject',
-          text: 'https://play.google.com/store/apps/details?id=com.school.app',
+          text: 'https://apps.apple.com/us/app/مدرسة-المجد/id1618614005',
+          // text: 'https://play.google.com/store/apps/details?id=com.school.app',
           fileName: 'share.png',
           mimeType: 'image/png',
           bytesOfFile: bytes.buffer.asUint8List());

@@ -94,11 +94,12 @@ class _PhotoScreenState extends State<PhotoScreen> {
                 },
                 child: Container(
                   padding: EdgeInsets.all(7.w),
+                  height: 140.h,
                   color: Colors.white.withOpacity(0.1),
                   child: Column(
                     children: [
                       Container(
-                        height: 120.h,
+                        // height: 120.h,
                         width: 160.w,
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(15.r),
@@ -107,6 +108,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
                               : Image.network(
                             '${data[index]['image']}',
                             width: double.infinity,
+                            height: 100.h,
                             fit: BoxFit.fill,
                           ),
                         ),

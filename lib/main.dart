@@ -26,7 +26,7 @@ import 'screens/notification/notification_detail.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MaterialApp(home: MyApp()));
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false,home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

@@ -77,7 +77,7 @@ class _VideoScreenState extends State<VideoScreen> {
 
                 return Container(
                   width: double.infinity,
-                  height: 250.h,
+                  // height: 350.h,
                   margin:
                       EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
                   padding:
