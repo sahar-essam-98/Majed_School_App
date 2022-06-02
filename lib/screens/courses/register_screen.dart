@@ -333,6 +333,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     onChanged: (value) {
                                       setState(() {
                                         agree = value ?? false;
+
                                       });
                                     },
                                   ),
@@ -381,15 +382,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool isloading = false;
 
   Future<void> performRegister() async {
+
     if (checkData()) {
+      // print(agree);
       await register();
     }
   }
 
   bool checkData() {
+    print(_dadMobileTextController.text.isNotEmpty);
     if (_nameTextController.text.isNotEmpty &&
         _idTextController.text.isNotEmpty &&
-        _schoolTextController.text.isNotEmpty &&
+        // _schoolTextController.text.isNotEmpty &&
         _mobileTextController.text.isNotEmpty &&
         _dadMobileTextController.text.isNotEmpty &&
         _momMobileTextController.text.isNotEmpty) {
@@ -400,6 +404,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   Future<void> register() async {
+
     setState(() {
       isloading = true;
     });
@@ -408,11 +413,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
         gender_id: gender_id,
         educational_level_id: 1,
         national_id: _idTextController.text,
-        school: _schoolTextController.text,
+        school: dropdownValue2,
+        // school: _schoolTextController.text,
         phone: _mobileTextController.text,
         course_id: widget.data['id'],
         mother_phone: _momMobileTextController.text,
         father_phone: _dadMobileTextController.text);
+
 
     setState(() {
       isloading = false;

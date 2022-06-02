@@ -86,7 +86,6 @@ class _ActivityDetailsState extends State<ActivityDetails> {
                             Linkify(
                               text:
                               widget.data['link']==null?'':'${widget.data['link']}',
-
                               style: TextStyle(
                                   fontFamily: 'noto',
                                   fontSize: 15.sp,

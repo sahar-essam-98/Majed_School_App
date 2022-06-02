@@ -264,8 +264,7 @@ class Controller {
       father_phone,
       mother_phone,
       course_id}) async {
-    print(
-        "im here $mother_phone $father_phone $phone $educational_level_id $gender_id $school $name $national_id");
+    print("im here $mother_phone $father_phone $phone $educational_level_id $gender_id $school $name $national_id");
     var mydata = {
       "name": '$name',
       "national_id": '$national_id',
@@ -274,7 +273,8 @@ class Controller {
       "educational_level_id": '$educational_level_id',
       "phone": '$phone',
       "mother_phone": '$mother_phone',
-      "course_id": '$course_id'
+      "course_id": '$course_id',
+      "father_phone":'$father_phone'
     };
     var res = await http.post(Uri.parse("$apiurl/courses/students"),
         headers: <String, String>{
