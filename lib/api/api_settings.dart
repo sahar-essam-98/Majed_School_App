@@ -10,7 +10,6 @@ class ApiSetting {
   static const String sliders = _apiUrl + 'sliders/{id}';
 
 
-
   static const String cities = _apiUrl + 'cities';
   static const String classes = _apiUrl + 'classes';
 }
